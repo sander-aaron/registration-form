@@ -11,30 +11,31 @@
 </head>
 <body>
 
-  <section>
-    <div>
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+  <section class="island">
+    <div class="grid max-length">
+      <h1 class="push-0 not-bold contact pad-t pad-b-1-2">Want to go to Mars?</h1>
+      <p class="">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+
       <form class="push-0" method="POST" action="https://formspree.io/sand0274@algonquinlive.com">
-        <h2>Personal details<h2>
-        <div>
-          <label for="name">Name</label>
+        <h2 class="italic kilo">Personal details<h2>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
+          <label for="name" class="not-bold">Name</label>
           <input id="name" name="name" required>
         </div>
 
-        <div>
-          <label for="age">Age</label>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
+          <label for="age" class="not-bold">Age</label>
           <input id="number" name="age" required>
         </div>
 
-        <div>
-          <label for="email">Your email</label>
-          <input id="email" type="email" required>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
+          <label for="email" class="not-bold">Your email</label>
+          <input id="email" type="email" name="email" required>
         </div>
 
-        <div>
-          <label for="subject">Physical fitness</label>
-          <select id="subject">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
+          <label for="fitness" class="not-bold">Physical fitness</label>
+          <select id="fitness" name="fitness" class="not-bold">
             <option>Super-human</option>
             <option>Fit as a fiddle</option>
             <option>Not terribly strong</option>
@@ -42,19 +43,23 @@
           </select>
         </div>
 
-        <div>
-          <label for="details">Adress</label>
-          <textarea id="details" required></textarea>
+        <div class="push milli">
+          <label for="adress" class="not-bold">Adress</label>
+          <textarea id="adress" name="adress" required></textarea>
         </div>
 
-        <h2>Mission statement</h2>
-        <div>
-          <label for="details">Why do you want to go to Mars?</label>
-          <textarea id="details" required></textarea>
+        <h2 class="italic kilo">Mission statement</h2>
+        <div class="push milli">
+          <label for="mission" class="not-bold">Why do you want to go to Mars?</label>
+          <textarea id="detail" name="mission" required></textarea>
         </div>
 
-        <div>
+        <div class="push milli">
           <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
+        </div>
+
+        <div>
+          <input type="hidden" name="_subject" value="Request to join the mission">
         </div>
       </form>
     </div>
