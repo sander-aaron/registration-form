@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
@@ -13,27 +14,27 @@
 
   <section class="island">
     <div class="grid max-length">
-      <h1 class="push-0 not-bold contact pad-t pad-b-1-2">Want to go to Mars?</h1>
-      <p class="">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <h1 class="unit xs-1 s-1 m-1 l-1 push-0 not-bold contact pad-t pad-b-1-2 zetta">Want to go to Mars?</h1>
+      <p class="unit xs-1 s-1 m-1 l-1">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <h2 class="unit xs-1 s-1 m-1 l-1 italic mega">Personal details</h2>
 
-      <form class="push-0" method="POST" action="https://formspree.io/sand0274@algonquinlive.com">
-        <h2 class="italic kilo">Personal details<h2>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
+      <form class="unit xs-1 s-1 m-1 l-1 push-0" method="POST" action="https://formspree.io/sand0274@algonquinlive.com">
+        <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
           <label for="name" class="not-bold">Name</label>
           <input id="name" name="name" required>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
-          <label for="age" class="not-bold">Age</label>
+        <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
+          <label for="number" class="not-bold">Age</label>
           <input id="number" name="age" required>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
-          <label for="email" class="not-bold">Your email</label>
+        <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
+          <label for="email" class="not-bold">Email</label>
           <input id="email" type="email" name="email" required>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 push milli">
+        <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
           <label for="fitness" class="not-bold">Physical fitness</label>
           <select id="fitness" name="fitness" class="not-bold">
             <option>Super-human</option>
@@ -43,18 +44,22 @@
           </select>
         </div>
 
-        <div class="push milli">
-          <label for="adress" class="not-bold">Adress</label>
-          <textarea id="adress" name="adress" required></textarea>
+        <div class="unit xs-1 s-1 m-1 l-1 push milli">
+          <label for="address" class="not-bold">Address</label>
+          <textarea id="address" name="address" required></textarea>
         </div>
 
-        <h2 class="italic kilo">Mission statement</h2>
-        <div class="push milli">
-          <label for="mission" class="not-bold">Why do you want to go to Mars?</label>
-          <textarea id="detail" name="mission" required></textarea>
+
+        <div class="unit xs-1 s-1 m-1 l-1 italic mega">
+          <h2>Mission statement</h2>
         </div>
 
-        <div class="push milli">
+        <div class="unit xs-1 s-1 m-1 l-1 push milli">
+          <label for="text" class="not-bold">Why do you want to go to Mars?</label>
+          <textarea id="text" name="mission" required></textarea>
+        </div>
+
+        <div class="text-center push milli">
           <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
         </div>
 
