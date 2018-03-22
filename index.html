@@ -13,58 +13,61 @@
 <body>
 
   <section class="island">
-    <div class="grid max-length">
-      <h1 class="unit xs-1 s-1 m-1 l-1 push-0 not-bold contact pad-t">Want to go to Mars?</h1>
-      <p class="unit xs-1 s-1 m-1 l-1 mega pad-t-1-2">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <div class="max-length">
+      <h1 class="push-0 not-bold contact pad-t">Want to go to Mars?</h1>
+      <p class="mega pad-t-1-2">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <form class="unit xs-1 s-1 m-1 l-1 push-0" method="POST" action="https://formspree.io/sand0274@algonquinlive.com">
+      <form class="push-0" method="POST" action="https://formspree.io/sand0274@algonquinlive.com">
         <fieldset>
-          <ledgend class="unit xs-1 s-1 m-1 l-1 italic mega">Personal details</ledgend>
-          <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
-            <label for="name" class="not-bold">Name</label>
-            <input id="name" name="name" required>
-          </div>
+          <legend class="unit xs-1 s-1 m-1 l-1 italic mega">Personal details</legend>
+          <div class="grid">
+            <div class="half unit xs-1 s-1 m-1 l-1-2 push milli">
+              <label for="name" class="not-bold">Name</label>
+              <input id="name" name="name" required>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
-            <label for="number" class="not-bold">Age</label>
-            <input id="number" name="age" required>
-          </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
+              <label for="number" class="not-bold">Age</label>
+              <input id="number" name="age" required>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
-            <label for="email" class="not-bold">Email</label>
-            <input id="email" type="email" name="email" required>
-          </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
+              <label for="email" class="not-bold">Email</label>
+              <input id="email" type="email" name="email" required>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
-            <label for="fitness" class="not-bold">Physical fitness</label>
-            <select id="fitness" name="fitness" class="not-bold">
-              <option>Super-human</option>
-              <option>Fit as a fiddle</option>
-              <option>Not terribly strong</option>
-              <option>A little couch-potato-y</option>
-            </select>
-          </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2 push milli">
+              <label for="fitness" class="not-bold">Physical fitness</label>
+              <select id="fitness" name="fitness" class="not-bold">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1 push milli">
-            <label for="address" class="not-bold">Address</label>
-            <textarea id="address" name="address" required></textarea>
+            <div class="unit xs-1 s-1 m-1 l-1 push milli">
+              <label for="address" class="not-bold">Address</label>
+              <textarea id="address" name="address" required></textarea>
+            </div>
           </div>
         </fieldset>
 
         <fieldset>
-          <ledgend class="unit xs-1 s-1 m-1 l-1 italic mega">Mission statement</ledgend>
+          <legend class="unit xs-1 s-1 m-1 l-1 italic mega">Mission statement</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1 l-1 push milli">
+              <label for="text" class="not-bold">Why do you want to go to Mars?</label>
+              <textarea id="text" name="mission" required></textarea>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1 push milli">
-            <label for="text" class="not-bold">Why do you want to go to Mars?</label>
-            <textarea id="text" name="mission" required></textarea>
-          </div>
+            <div class="text-center push milli">
+              <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
+            </div>
 
-          <div class="text-center push milli">
-            <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
-          </div>
-
-          <div>
-            <input type="hidden" name="_subject" value="Request to join the mission">
+            <div>
+              <input type="hidden" name="_subject" value="Request to join the mission">
+            </div>
           </div>
         </fieldset>
       </form>
