@@ -11,3 +11,15 @@ h1 {
 button {
   color: #f2f2f2;
 }
+
+@media only screen and (min-width: 60em) {
+
+  .pad-l {
+    padding-left: .5rem;
+  }
+
+  .pad-r {
+    padding-right: .5rem;
+  }
+
+}
